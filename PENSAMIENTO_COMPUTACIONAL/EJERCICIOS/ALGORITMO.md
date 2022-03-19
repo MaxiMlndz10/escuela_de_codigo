@@ -28,3 +28,12 @@
 * Inicio
 * Declarar (Saldo, Costo)
 * Asignar (saldo, costo)
+
+
+TAREA
+Algoritmo para calcular el perimetro de un cuadrado
+* iniamos definiendo el lado, perimetro como real
+* escribir uno de los lados del cuadrado
+* leer en la variable lado
+* realizar la formula para calcular el perimetro del cuadrado
+  
