@@ -40,7 +40,7 @@ mayor que “F”. ¿Cuál es el menor de todos? R= G
 ## OPERADORES LOGICOS
 Reto. Evalúa las siguientes expresiones a la derecha.
 1) (45<120 OR 12<120) = verdadero
-2) (6! =6) && (12>22)) =falso
+2) (6! =6) && (12>22)) = falso
 3) ¬ (128<145 && 12>9) = falso
-4) “Daniela”< >”DANIELA” =
-5) 10*20< >210 =
+4) “Daniela”< >”DANIELA” = falso
+5) 10*20< >210 = faslo
