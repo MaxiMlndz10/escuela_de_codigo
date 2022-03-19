@@ -31,9 +31,18 @@
 
 
 TAREA
-Algoritmo para calcular el perimetro de un cuadrado
+ALGORITMO PARA CALCULAR EL PERIMETRO DE UN CUADRO
 * iniamos definiendo el lado, perimetro como real
 * escribir uno de los lados del cuadrado
 * leer en la variable lado
 * realizar la formula para calcular el perimetro del cuadrado
-  
+  perimetro=lado*4   (el perimetro se calcula sumando sus 4 lados)
+*escribir el perimetro del cuadrado
+
+ALGORITMO PARA CALCULAR EL PROMEDIO DE 4 CALIFICACIONES
+*Definir C1, C2, C3, C4, promedio 
+*Ingresa las calificaciones
+*leer C1, C2, C3, C4
+*Calcular promedio
+   p=(C1+C2+C3+C4)/4
+*Mostrar el resultado "el promedio de las 4 calificaciones es:"
