@@ -7,7 +7,8 @@
   * mostrar("ingresa número")
   * asignar(número)
   * SI(n==0 si se cumple es neutro, ni positivo ni negativo   escribir "El número <<n>> es neutro" SINO si la condición no se cumple, evaluamos si el número es mayor a cero  si n>0   si esta condición se cumple, quiere decir que el número es positivo "Escribir el número <<n>> es postivo" SINO, si la condición no se cumple, significa que el número es negativo "Escribir el número <<n>> es negativo" 
-  *Fin
+  
+ *fin
  
    
 * Programa que solicite se ingrese una letra y sólo permita introducir los caracteres s y n.
