@@ -29,10 +29,31 @@
 
 * Programa que pida 3 números y los muestre en pantalla de menor a mayor.
   * Inicia
-  * declarar(n, x, a, b, c como real)
+  * declarar(n,x,a,b,c como real)
   * mostrar("Ingresa 3 numeros")
-  * asignar(para x = 1 hasta 3 con paso 1)
-  * SI
+    Para x = 1 Hasta 3 con paso 1
+  * asignar(n) 
+  * SI x == 1 Entonces 
+            a = n
+    SI x == 2 Entonces
+            SI a < n Entonces
+                   b = a
+                   a = n
+            SINO
+                   b = n
+    SI x == 3 Entonces
+            SI a < n Entonces
+                   c = b
+                   b = a
+                   a = n
+            SINO 
+                SI b < n
+    Entonces c = b
+             b = n
+            SINO
+             c = n
+   * mostrar("Ingresar c, b, a)
+   * Fin        
 
 * De un programa que pida un número del 1 al 12 y diga el nombre del mes correspondiente.
   * Inicio
@@ -42,7 +63,6 @@
   * EN CASO DE (mes) HAGA caso 1: mostrar("Enero") caso 2: mostrar ("Febrero") caso 3: mostrar ("Marzo") caso 4: mostrar ("Abril") caso 5: mostrar ("Mayo") 
     caso 6: mostrar ("Junio") caso 7: mostar ("Julio") caso 8: mostar ("Agosto") caso 9: mostrar ("Septiembre") caso 10: mostrar ("Octubre") caso 11: mostrar        ("Noviembre") caso 12: mostrar ("Diciembre") SINO mostrar ("Ingresaste un numero fuera del rango 1-12") FIN CASO
   * Fin
-
 
 * De un programa que permita al usuario elegir un candidato por el cual votar. Las posibilidades son: candidato A por el partido rojo, candidato B por el partido verde, candidato C por el partido azul. Según el candidato elegido (A, B ó C) se le debe imprimir el mensaje “Usted ha votado por el partido [color que corresponda al candidato elegido]”. Si el usuario ingresa una opción que no corresponde a ninguno de los candidatos disponibles, indicar “Opción errónea”.
 * Para un programa que almacene la cadena de caracteres para una contraseña y email, pregunte al usuario por la contraseña y email e imprima por pantalla si la contraseña y el email introducidos por el usuario coincide con los guardadados en las variables.
