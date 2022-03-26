@@ -7,14 +7,32 @@
   * mostrar("ingresa número")
   * asignar(número)
   * SI(n==0) si se cumple es neutro no es ni positivo ni negativo (escribir "El número << n >> es neutro") SINO si la condición no se cumple evaluamos si el número es mayor a cero. (si n>0)  si esta condición se cumple, quiere decir que el número es positivo ("Escribir el número << n >> es postivo") SINO, si la condición no se cumple, significa que el número es negativo ("Escribir el número << n >> es negativo")
-    *fin
- 
+  * Fin 
    
 * Programa que solicite se ingrese una letra y sólo permita introducir los caracteres s y n.
+  * Inicio
+  * Declarar(x como entero, l como caracter)  x=l  mientras x <> 0 hacer
+  * Mostrar("Ingresa una letra" leer l)
+  * SI(l <> "s" y l <> "S" y l <> "n" y l <> " 
+    x = 0
+  * Fin
 
 * Un programa que pida una letra y detecte si es una vocal. 
+  * Inicia
+  * declarar(letra como caracter)
+  * mostrar("Ingresa un caracter: ")
+  * asignar(letra)
+  * SI(letra == "a" o letra == "e" o letra == "i" o letra == "o" o letra == "u" Entonces
+    Escribir "el caracter: ",letra," es una vocal" SINO  si letra == "A" o letra == "E" o letra == "I" o letra == "O" o letra == "U" entonces
+    Escribir "El caracter :", letra," es una vocal" SINO  Escribir "El caracter: ",letra," es una consonante"
+  * Fin
 
-* Programa que pida 3 números y los muestre en pantalla de menor a mayor.  
+* Programa que pida 3 números y los muestre en pantalla de menor a mayor.
+  * Inicia
+  * declarar(n, x, a, b, c como real)
+  * mostrar("Ingresa 3 numeros")
+  * asignar(para x = 1 hasta 3 con paso 1)
+  * SI
 
 * De un programa que pida un número del 1 al 12 y diga el nombre del mes correspondiente.
   * Inicio
