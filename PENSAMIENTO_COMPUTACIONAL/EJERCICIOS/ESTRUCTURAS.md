@@ -2,59 +2,81 @@
 ## REALIZAR LOS SIGUIENTES RETOS CON SU ALGORITMO Y DIAGRAMA DE FLUJO CORRESPONDIENTE CADA UNO 
 
 * Programa que pida un número y diga si es positivo o negativo
-  * Inicio 
-  * declarar(número)INT
-  * mostrar("ingresa número")
-  * asignar(número)
-  * SI(n==0) si se cumple es neutro no es ni positivo ni negativo (escribir "El número << n >> es neutro") SINO si la condición no se cumple evaluamos si el número es mayor a cero. (si n>0)  si esta condición se cumple, quiere decir que el número es positivo ("Escribir el número << n >> es postivo") SINO, si la condición no se cumple, significa que el número es negativo ("Escribir el número << n >> es negativo")
-  * Fin 
+     * Iniciar
+     * Declarar(num Como Entero)
+     * Mostrar("Digite un número: ")
+     * Asignar(número)
+     * Si num > 0 Entonces
+        Escribir "El número: ",num, "Es positivo"
+     *  SiNo
+        Si num < 0 Entonces
+        Escribir "El número: ",num, "Es negativo"
+     *  SiNo
+        Escribir "El número: ",num, "Es neutro"
+       Fin Si
+      * Fin
+      ![multiplica](https://user-images.githubusercontent.com/101481300/160302187-31bed57f-504d-46d4-a3a1-a9df0f8e22a5.png)
+
    
 * Programa que solicite se ingrese una letra y sólo permita introducir los caracteres s y n.
-  * Inicio
-  * Declarar(x como entero, l como caracter)  x=l  mientras x <> 0 hacer
-  * Mostrar("Ingresa una letra" leer l)
-  * SI(l <> "s" y l <> "S" y l <> "n" y l <> " 
-    x = 0
+  * Iniciar
+  * Mostrar("Ingresar x Como entero")
+  * Mostrar("Ingresar l Como entero")
+     x = 1
+  * Mientras x <> 0 Hacer
+  * Escribir "Ingresa una letra"
+     Leer l
+     Si l <> "s" y l <> "S" y l <> "n" y l <> "N" Entonces
+      x = 0
+     Fin Si
+    Fin Mientras
   * Fin
+  
+  ![INTRODUCE S Y N](https://user-images.githubusercontent.com/101481300/160302316-039d85f2-6190-47ae-9681-183e3affeafc.png)
+
 
 * Un programa que pida una letra y detecte si es una vocal. 
   * Inicia
-  * declarar(letra como caracter)
-  * mostrar("Ingresa un caracter: ")
-  * asignar(letra)
-  * SI(letra == "a" o letra == "e" o letra == "i" o letra == "o" o letra == "u" Entonces
-    Escribir "el caracter: ",letra," es una vocal" SINO  si letra == "A" o letra == "E" o letra == "I" o letra == "O" o letra == "U" entonces
-    Escribir "El caracter :", letra," es una vocal" SINO  Escribir "El caracter: ",letra," es una consonante"
+  * mostrar("Ingresar letra como caracter")
+	 * mostrar("Ingresar un caracter: ")
+	 * asignar(letra)
+	   Si letra == "a" o letra == "e" o letra == "i" o letra == "o" o letra == "u" Entonces
+		  Escribir "El caracter es una vocal" 
+	 * SiNo
+		   si letra == "A" o letra == "E" o letra == "I" o letra == "O" o letra == "U" Entonces
+			 Escribir "El caracter es una vocal"
+		* SiNo
+			 Escribir "El caracter es una consonante"
+		  FinSi
+	  Fin Si
   * Fin
+  
+    ![DETECTA VOCAL](https://user-images.githubusercontent.com/101481300/160303421-f1dc7500-0f86-4acb-8f6e-adb60d503b33.png)
+
 
 * Programa que pida 3 números y los muestre en pantalla de menor a mayor.
   * Inicia
-  * declarar(n,x,a,b,c como real)
-  * mostrar("Ingresa 3 numeros")
-    Para x = 1 Hasta 3 con paso 1
-  * asignar(n) 
-  * SI x == 1 Entonces 
-            a = n
-    SI x == 2 Entonces
-            SI a < n Entonces
-                   b = a
-                   a = n
-            SINO
-                   b = n
-    SI x == 3 Entonces
-            SI a < n Entonces
-                   c = b
-                   b = a
-                   a = n
-            SINO 
-                SI b < n
-    Entonces c = b
-             b = n
-            SINO
-             c = n
-   * mostrar("Ingresar c, b, a)
-   * Fin        
+  * mostrar("a,b,c como entero")
+	 * mostrar("Ingresar tres números")
+ 	* asignar(a,b,c)
+	 * Si a>b Entonces
+		  Si a>c Entonces
+		* Escribir "El número: ",a, "Es el mayor de los tres"
+	  	SiNo
+		* Escribir "El número: ",c, "Es el mayor de los tres"
+		  Fin Si
+	   SiNo
+		  Si b>c Entonces
+		* Escribir "El número: ",b, "Es el mayor de los tres"
+		  SiNo
+		*	Escribir "El número: ",c, "Es el mayor de los tres"
+	  	Fin Si
+   	Fin Si
+  * Fin
+  
+  ![PIDE 3 NUMEROS QUE SE MUESTREN DE MAYOR A MENOR](https://user-images.githubusercontent.com/101481300/160304950-04a100e8-3c12-48f2-8a14-d5caab80fdd3.png)
 
+  
 * De un programa que pida un número del 1 al 12 y diga el nombre del mes correspondiente.
   * Inicio
   * declara(mes)int
@@ -64,5 +86,9 @@
     caso 6: mostrar ("Junio") caso 7: mostar ("Julio") caso 8: mostar ("Agosto") caso 9: mostrar ("Septiembre") caso 10: mostrar ("Octubre") caso 11: mostrar        ("Noviembre") caso 12: mostrar ("Diciembre") SINO mostrar ("Ingresaste un numero fuera del rango 1-12") FIN CASO
   * Fin
 
+
 * De un programa que permita al usuario elegir un candidato por el cual votar. Las posibilidades son: candidato A por el partido rojo, candidato B por el partido verde, candidato C por el partido azul. Según el candidato elegido (A, B ó C) se le debe imprimir el mensaje “Usted ha votado por el partido [color que corresponda al candidato elegido]”. Si el usuario ingresa una opción que no corresponde a ninguno de los candidatos disponibles, indicar “Opción errónea”.
+
+
+
 * Para un programa que almacene la cadena de caracteres para una contraseña y email, pregunte al usuario por la contraseña y email e imprima por pantalla si la contraseña y el email introducidos por el usuario coincide con los guardadados en las variables.
