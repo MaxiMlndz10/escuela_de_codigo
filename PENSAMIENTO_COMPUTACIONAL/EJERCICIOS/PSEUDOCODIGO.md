@@ -36,7 +36,7 @@ Convierte los siguientes ejercicios realizado durante el taller a pseudocodigo.
 
 3. Realiza un algoritmo y diagrama de flujo de un programa que resuelva el sigueinte problema: Solicitando se ingresen 4 calificaciones, una por periodo, se obtenga el promedio y se imprima una felicitación a quien obtenga un promedio mayor a 6, y se le informe ha reprobado a quien obtenga una calificacion menor a 6.
 
-  * Algoritmo NOTA_CALIFICACION
+  * Algoritmo 
   * Definir a,b,c,d Como Entero
   * Definir e Como Real
   * Escribir "Ingresar nota 1 del alumno: "
@@ -56,11 +56,24 @@ Convierte los siguientes ejercicios realizado durante el taller a pseudocodigo.
      Fin Si	
   * FinAlgoritmo
 
-![image](https://user-images.githubusercontent.com/101481300/160751836-043c4989-ddb0-4f2d-a2dc-fdf03c592b12.png)
+![CALIFICACIONES](https://user-images.githubusercontent.com/101481300/160946366-d24f983c-d134-4d90-b135-c21af2d355a6.png)
 
-![image](https://user-images.githubusercontent.com/101481300/160751929-86c77778-2982-42e5-8aa6-9fa93492de85.png)
+
+
 
 4. Realizar un algoritmo y diagrama de flujo para un programa que solicite un número e indique si es par o impar.
+
+ * Algoritmo sin_titulo
+ * Escribir "Ingresar un número: "
+ * Leer nun
+ * Si num mod 2 = 0 Entonces
+ * Escribir "El número: ", num, "Es par"
+     SiNo
+ * Escribir "El número: ", num, "Es impar"
+	FinSi
+ * FinAlgoritmo
+
+![PAR IMPAR](https://user-images.githubusercontent.com/101481300/160944976-b51099a3-89e8-49dd-9cea-0910810d460e.png)
 
 
 5. Un programa que pida una letra y detecte si es una vocal.
@@ -110,5 +123,20 @@ Convierte los siguientes ejercicios realizado durante el taller a pseudocodigo.
 
 7. Realizar un algoritmo y diagrama de flujo para un programa que permita ingresar un nombre y una cantidad numérica para que así después el programa escriba este nombre tantas veces como su cantidad ingresada.
 
+ * Algoritmo
+ * Definir nombre Como Caracter
+ * Definir c Como Entero
+ * Escribir "Ingrese su nombre"
+ * Leer nombre
+     c<-1
+ * Escribir "Ingresar número"
+ * Leer número
+ * Mientras c<=10 Hacer
+ * Escribir c,".-",nombre;
+      c<-c+1		
+    FinMientras
+ * FinAlgoritmo
+
+![INGRESA NOMBRE](https://user-images.githubusercontent.com/101481300/160948546-56ceadca-2934-46b2-9bd1-7ece82a0e1c4.png)
 
 8. Realiza un algoritmo y diagrama de flujo de un programa que solicita números al usuario y haga la suma de todos ellos. El algoritmo debe solicitar números siempre y cuando el número ingresado sea positivo, si el usuario ingresa un número no positivo el algoritmo debe terminar e imprimir la suma de los números positivos.
