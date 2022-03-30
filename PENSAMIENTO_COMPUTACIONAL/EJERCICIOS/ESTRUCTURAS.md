@@ -79,12 +79,36 @@
   
 * De un programa que pida un número del 1 al 12 y diga el nombre del mes correspondiente.
   * Inicio
-  * declara(mes)int
-  * muestra("ingresa número para escribir su mes")
-  * asigna(mes)
-  * EN CASO DE (mes) HAGA caso 1: mostrar("Enero") caso 2: mostrar ("Febrero") caso 3: mostrar ("Marzo") caso 4: mostrar ("Abril") caso 5: mostrar ("Mayo") 
-    caso 6: mostrar ("Junio") caso 7: mostar ("Julio") caso 8: mostar ("Agosto") caso 9: mostrar ("Septiembre") caso 10: mostrar ("Octubre") caso 11: mostrar        ("Noviembre") caso 12: mostrar ("Diciembre") SINO mostrar ("Ingresaste un numero fuera del rango 1-12") FIN CASO
-  * Fin
+  * Declarar(número Como Entero)
+  * Mostrar("Ingresar número")
+  * Asignar(número)
+	segun número hacer
+		1:
+			Escribir "El numero 1 corresponde al mes de enero"
+		2:
+			Escribir "El numero 1 corresponde al mes de febrero"
+		3:
+			Escribir "El numero 1 corresponde al mes de marzo"
+		4:
+			Escribir "El numero 1 corresponde al mes de abril"
+		5:
+			Escribir "El numero 1 corresponde al mes de mayo"
+		6:
+			Escribir "El numero 1 corresponde al mes de junio"
+		7:
+			Escribir "El numero 1 corresponde al mes de julio"
+		8:
+			Escribir "El numero 1 corresponde al mes de agosto"
+		9:
+			Escribir "El numero 1 corresponde al mes de septiembre"
+		10:
+			Escribir "El numero 1 corresponde al mes de octubre"
+		11:
+			Escribir "El numero 1 corresponde al mes de noviembre"
+		12:
+			Escribir "El numero 1 corresponde al mes de diciembre"
+		FinSegun	
+  * Fin	
 
 
 * De un programa que permita al usuario elegir un candidato por el cual votar. Las posibilidades son: candidato A por el partido rojo, candidato B por el partido verde, candidato C por el partido azul. Según el candidato elegido (A, B ó C) se le debe imprimir el mensaje “Usted ha votado por el partido [color que corresponda al candidato elegido]”. Si el usuario ingresa una opción que no corresponde a ninguno de los candidatos disponibles, indicar “Opción errónea”.
