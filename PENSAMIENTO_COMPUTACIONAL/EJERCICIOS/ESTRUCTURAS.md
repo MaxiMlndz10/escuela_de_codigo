@@ -108,7 +108,9 @@
 		12:
 			Escribir "El numero 1 corresponde al mes de diciembre"
 		FinSegun	
-  * Fin	
+  * Fin
+
+![MES](https://user-images.githubusercontent.com/101481300/160730076-37df9d35-572a-4cf6-af17-75ccc852c063.png)
 
 
 * De un programa que permita al usuario elegir un candidato por el cual votar. Las posibilidades son: candidato A por el partido rojo, candidato B por el partido verde, candidato C por el partido azul. Según el candidato elegido (A, B ó C) se le debe imprimir el mensaje “Usted ha votado por el partido [color que corresponda al candidato elegido]”. Si el usuario ingresa una opción que no corresponde a ninguno de los candidatos disponibles, indicar “Opción errónea”.
