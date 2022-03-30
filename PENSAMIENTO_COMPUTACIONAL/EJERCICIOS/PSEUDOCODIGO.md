@@ -2,6 +2,7 @@
 Convierte los siguientes ejercicios realizado durante el taller a pseudocodigo.
 
 1. Realizar un algoritmo y diagrama de flujo de un programa que solicite un número y lo multiplique por 9, mostrando su resultado.
+
   * Algoritmo
         * Escribir "Ingresar número"
         * Leer número
@@ -9,36 +10,102 @@ Convierte los siguientes ejercicios realizado durante el taller a pseudocodigo.
         * mul<-num*9
         * Escribir "El resultado de la mul es: ",mul
   * FinAlgoritmo
-  ![image](https://user-images.githubusercontent.com/101481300/160295444-b17a1c77-9de1-4e3c-8376-021890c960fa.png)
+  
+  ![MULTIPLICA UN NUMERO POR 9](https://user-images.githubusercontent.com/101481300/160735826-37fa9c2b-6faf-4b4a-99bc-39bd67427652.png)
+
   
   
 2. Realiza un diagrama de flujo para obtener la suma de diez cantidades, que se soliciten al usuario, mediante la utilización de un ciclo “Mientras”. 
-  * Algoritmo
-        * Escribir "Ingresar total suma, cantidad, i como entero"
-        * Escribir "¿Cuántos números desea sumar?"
-        * Leer cantidad
-        * i<-1
-        * Mientras i<-cantidad Hacer
-             * Escribir "Ingresar el número: ",i
-             * Leer n
-             * Total_suma<-Total_suma+n
-             * i<-i+1
-        * Fin Mientras
-        * Escribir "Ingresa la suma de los números es: ",Total-suma
-        * FinAlgoritmo
-          
 
+  * Algoritmo
+  * Definir x Como Entero
+	 * Definir n,suma Como Real
+	      x = 1
+	      suma = 0
+	 * Mientras x <=10 Hacer
+		* Escribir "Ingresa el número: ",x
+		* Leer n
+		     suma = suma + n
+		     x = x + 1
+	 * FinMientras
+	 * Escribir "La suma de los 10 números es: ",suma
+  * Fin
+    
+    ![SUMA 10 CANTIDADES](https://user-images.githubusercontent.com/101481300/160747693-fd5a871a-0399-4dd8-b873-b565f822ddfb.png)
+ 
 
 3. Realiza un algoritmo y diagrama de flujo de un programa que resuelva el sigueinte problema: Solicitando se ingresen 4 calificaciones, una por periodo, se obtenga el promedio y se imprima una felicitación a quien obtenga un promedio mayor a 6, y se le informe ha reprobado a quien obtenga una calificacion menor a 6.
 
+  * Algoritmo NOTA_CALIFICACION
+  * Definir a,b,c,d Como Entero
+  * Definir e Como Real
+  * Escribir "Ingresar nota 1 del alumno: "
+  * Leer a
+  * Escribir "Ingresar nota 2 del alumno: "
+  * Leer b
+  * Escribir "Ingresar nota 3 del alumno: "
+  * Leer c
+  * Escribir "Ingresar nota 4 del alumno: "
+  * Leer d
+	    e<-(a+b+c+d)/4
+	 * Escribir "El promedio es: ",e;
+	 * Si e>6 Entonces
+	 * Escribir "FELICIDADES USTED APROBO"
+     SiNo
+  * Escribir "USTED REPROBO"
+     Fin Si	
+  * FinAlgoritmo
+
+![image](https://user-images.githubusercontent.com/101481300/160751836-043c4989-ddb0-4f2d-a2dc-fdf03c592b12.png)
+
+![image](https://user-images.githubusercontent.com/101481300/160751929-86c77778-2982-42e5-8aa6-9fa93492de85.png)
 
 4. Realizar un algoritmo y diagrama de flujo para un programa que solicite un número e indique si es par o impar.
 
 
 5. Un programa que pida una letra y detecte si es una vocal.
+  * Algoritmo
+  * Escribir "Ingresar letra como caracter"
+	 * Escribir "Ingresar un caracter: "
+	 * asignar(letra)
+	   Si letra == "a" o letra == "e" o letra == "i" o letra == "o" o letra == "u" Entonces
+		  Escribir "El caracter es una vocal" 
+	 * SiNo
+		   si letra == "A" o letra == "E" o letra == "I" o letra == "O" o letra == "U" Entonces
+			 Escribir "El caracter es una vocal"
+		* SiNo
+			 Escribir "El caracter es una consonante"
+		  FinSi
+	  Fin Si
+  * Fin
+   
+   ![DETECTA VOCAL](https://user-images.githubusercontent.com/101481300/160303421-f1dc7500-0f86-4acb-8f6e-adb60d503b33.png)
+
 
 
 6. Programa que pida 3 números y los muestre en pantalla de menor a mayor.
+
+ * Algoritmo
+ * Escribir "a,b,c como entero"
+	* Escribir "Ingresar tres números"
+ * Mostrar a,b,c
+	* Si a>b Entonces
+		  Si a>c Entonces
+	* Escribir "El número: ",a, "Es el mayor de los tres"
+	  	SiNo
+	* Escribir "El número: ",c, "Es el mayor de los tres"
+		  Fin Si
+	   SiNo
+		  Si b>c Entonces
+	* Escribir "El número: ",b, "Es el mayor de los tres"
+		  SiNo
+	*	Escribir "El número: ",c, "Es el mayor de los tres"
+	  	Fin Si
+   	Fin Si
+ * Fin
+  
+  ![PIDE 3 NUMEROS QUE SE MUESTREN DE MAYOR A MENOR](https://user-images.githubusercontent.com/101481300/160304950-04a100e8-3c12-48f2-8a14-d5caab80fdd3.png)
+
 
 
 7. Realizar un algoritmo y diagrama de flujo para un programa que permita ingresar un nombre y una cantidad numérica para que así después el programa escriba este nombre tantas veces como su cantidad ingresada.
